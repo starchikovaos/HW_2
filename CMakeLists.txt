@@ -1,8 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
 set(CMAKE_VERBOSE_MAKEFILE on)
-set(PYTHON_EXECUTABLE c:/Python34/python.exe) 
-set(PYTHON_INCLUDE_DIR c:/Python34/include) 
-set(PYTHON_LIBRARY c:/Python34/libs/python34.lib)
 find_package(PythonLibs 3.2 REQUIRED)
 include_directories(${PYTHON_INCLUDE_DIRS})
 python_add_module(matrixops matrixops.cpp)
